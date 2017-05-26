@@ -1,0 +1,409 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:text="退票申请详情" 
+        android:background="@android:color/holo_blue_dark"/>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+	    android:layout_height="0sp"
+	    android:layout_weight="1" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+ 	   android:layout_height="match_parent"
+ 	   android:orientation="vertical">
+   	   
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5sp" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingLeft="20sp"
+	    android:paddingRight="20sp" >
+	  
+	    <TextView 	     
+	        android:layout_width="0sp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="23sp"
+	        android:paddingTop="10sp"
+	        android:text="订单号："/>  	    
+	    <TextView 
+	        android:id="@+id/a1"
+	        android:layout_width="0sp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:textSize="24sp"
+	        android:gravity="right"
+	        android:text="order_num"/>  
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15sp"
+        android:textColor="#ffffff"
+        android:textSize="26dp"
+        android:gravity="center"
+        android:background="#EAEAEA"/>
+    
+    <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="10sp"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingLeft="20sp"
+	    android:paddingRight="20sp" >
+	    <TextView
+	        android:id="@+id/a2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingRight="10sp" 
+	        android:textSize="24sp"
+	        android:text="出发日期"/>
+	    <TextView 
+	        android:id="@+id/a3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="24sp"
+	        android:paddingRight="8sp"
+	        android:text="起点"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="24sp"
+	        android:text="-"/>  	 
+	           
+	    <TextView 
+	        android:id="@+id/a4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="24sp"
+	        android:paddingLeft="8sp"
+	        android:text="终点"/>  
+    </LinearLayout>
+    <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="20sp"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingLeft="20sp"
+	    android:paddingRight="20sp" >
+	    <TextView
+	        android:id="@+id/a5"
+	        android:layout_width="0sp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="26sp"
+	        android:paddingTop="5sp"
+	        android:text="起飞时间"/>
+	     <LinearLayout 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical" >
+		    <TextView 
+		        android:id="@+id/a6"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="17sp"
+		        android:paddingLeft="5sp"
+		        android:text="飞行时间"/>
+		    <TextView
+		        android:layout_width="80sp"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/jiantou2"/>  
+	     </LinearLayout>	 	           
+	    <TextView 
+	        android:id="@+id/a7"
+	        android:layout_width="0sp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="26sp"
+	        android:gravity="right"
+	        android:paddingTop="5sp"
+	        android:text="降落时间"/>  
+    </LinearLayout>
+    <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="10sp"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingLeft="20sp"
+	    android:paddingRight="20sp" >
+	    <TextView
+	        android:id="@+id/a8"
+	        android:layout_width="0sp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="24sp"
+	        android:textColor="#20B2AA"
+	        android:text="起飞机场"/>
+	    <TextView
+	        android:id="@+id/a9"
+	        android:layout_width="0sp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="24sp"
+	        android:gravity="right"
+	        android:text="降落机场"/>
+	</LinearLayout>    
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="10sp"/>
+	
+	<LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingLeft="20sp"
+	    android:paddingRight="20sp" >
+	    <TextView
+	        android:id="@+id/a10"
+	        android:layout_width="0sp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:textSize="22sp"
+	        android:gravity="center"
+	        android:text="舱位"/>
+	    <TextView
+	        android:id="@+id/a11"
+	        android:layout_width="0sp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:textSize="22sp"
+	        android:textColor="#9C9C9C"
+	        android:text="航班号"/>
+	</LinearLayout> 
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="10sp"/>
+	   
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="#EAEAEA"/>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="10sp"/>
+	
+	<LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingLeft="20sp"
+	    android:paddingRight="20sp" >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp"
+	        android:textColor="#9C9C9C"
+	        android:text="购票账户"/>
+	    <TextView
+	        android:id="@+id/a17"
+	        android:paddingLeft="20sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp"
+	        android:text="用户名"/>
+	</LinearLayout>    
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="10sp"/>
+	
+	<LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingLeft="20sp"
+	    android:paddingRight="20sp" >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp"
+	        android:textColor="#9C9C9C"
+	        android:text="乘机人"/>
+	    <TextView
+	        android:id="@+id/a12"
+	        android:paddingLeft="20sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="23sp"
+	        android:text="姓名"/>
+	    <TextView
+	        android:paddingLeft="20sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#9C9C9C"
+	        android:textSize="22sp"
+	        android:text="成人票"/>
+	</LinearLayout>    
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="15sp"/>
+	
+	<LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingLeft="110sp"
+	    android:paddingRight="20sp" >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp"
+	        android:text="护照"/>
+	    <TextView
+	        android:id="@+id/a13"
+	        android:paddingLeft="30sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp"
+	        android:text="IDCARD"/>
+	</LinearLayout>    
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="15sp"/>
+	
+	<LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingLeft="110sp"
+	    android:paddingRight="20sp" >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp"
+	        android:text="国籍"/>
+	    <TextView
+	        android:id="@+id/a14"
+	        android:paddingLeft="30sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp"
+	        android:text="nation"/>
+	</LinearLayout> 
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="10sp"/>
+	
+	<LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingLeft="20sp"
+	    android:paddingRight="20sp" >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#9C9C9C"
+	        android:textSize="22sp"
+	        android:text="订单总价"/>
+	    <TextView
+	        android:id="@+id/a15"
+	        android:paddingLeft="20sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp"
+	        android:textColor="#FF8C00"
+	        android:text="￥8888"/>
+	</LinearLayout> 
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="10sp"/>
+	
+	<LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingLeft="20sp"
+	    android:paddingRight="20sp" >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#9C9C9C"
+	        android:textSize="24sp"
+	        android:text="其他" />
+	    <TextView
+	        android:id="@+id/a16"
+	        android:paddingLeft="10sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp"
+	        android:text="other"/>
+	</LinearLayout> 
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="15sp"/>
+	
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_weight="1"
+        android:background="@drawable/baoxian" />
+				
+	</LinearLayout>
+	</ScrollView>
+	
+      
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"  >
+	    <Button
+	        android:id="@+id/agree"
+	        android:layout_width="0sp"
+	        android:layout_height="34sp"
+	        android:layout_weight="1"
+	        android:textSize="24sp"
+	        android:textColor="#ffffff"
+	        android:gravity="center"
+	        android:background="@android:color/holo_blue_light"
+	        android:text="同意退票"/>
+	   <Button
+	        android:id="@+id/disagree"
+	        android:layout_width="0sp"
+	        android:layout_height="34sp"
+	        android:layout_weight="1"
+	        android:textColor="#ffffff"
+	        android:gravity="center"
+	        android:background="@android:color/holo_orange_light"
+	        android:textSize="24sp"
+	        android:text="申请驳回"/>
+	</LinearLayout>
+	 <Button
+       android:id="@+id/back6"
+       android:layout_width="match_parent"
+       android:layout_height="21sp"
+       android:textSize="16sp"
+       android:textColor="#ffffff"
+       android:gravity="center"
+       android:background="@android:color/darker_gray"
+       android:text="返回"/> 
+
+</LinearLayout>

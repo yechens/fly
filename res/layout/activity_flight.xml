@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:text="以下是最新航班" 
+        android:background="@android:color/holo_blue_dark"/>
+    <TextView 
+        android:layout_height="20dp"
+        android:layout_width="match_parent"/>
+    
+    <ListView 
+        android:id="@+id/listFlight"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1" >       
+    </ListView>
+    
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical">
+	<Button
+        android:id="@+id/back4"
+        android:layout_width="match_parent"
+        android:layout_height="24sp"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:text="重新查找" />
+	</LinearLayout>
+
+</LinearLayout>

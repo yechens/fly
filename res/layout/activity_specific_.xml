@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="航班详情" 
+        android:background="@android:color/holo_blue_dark"/>
+    <TextView 
+        android:layout_height="15dp"
+        android:layout_width="match_parent"/>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+	    android:layout_height="0sp"
+	    android:layout_weight="1" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+ 	   android:layout_height="match_parent"
+ 	   android:orientation="vertical">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <ImageView 
+	        android:id="@+id/fei"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="20dp"
+	        android:paddingRight="20dp"
+	        android:src="@drawable/fei"/>	    
+	    <TextView 
+	        android:id="@+id/flight_num_txt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="34dp"
+	        android:paddingTop="7dp"
+	        android:text="航班号"/>  
+    </LinearLayout>
+    <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="8dp"/>  
+	    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    
+        <TextView 
+	        android:id="@+id/go_txt"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="4"
+	        android:textColor="#00CED1"
+	        android:textSize="30dp"
+	        android:paddingLeft="20dp"
+	        android:text="起点"/>  
+	    <TextView 
+	        android:id="@+id/jiantou"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textColor="#9C9C9C"
+	        android:textSize="23dp"
+	        android:text="—"/>  
+	    <TextView 
+	        android:id="@+id/get_txt"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="4"
+	        android:textColor="#00CED1"
+	        android:textSize="30dp"	
+	        android:text="终点"/> 
+	    <TextView 
+	        android:id="@+id/date_txt"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="6"
+	        android:textSize="28dp"
+	        android:gravity="right"
+	        android:paddingRight="20dp"
+	        android:text="日期"/> 
+	</LinearLayout>
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="10dp"/>
+	
+	<LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    
+        <TextView 
+	        android:id="@+id/depart_time_txt"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="22dp"
+	        android:layout_marginLeft="20sp"
+	        android:text="起飞时间"/>
+        <TextView 
+	        android:id="@+id/fly_time_txt"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="22dp"
+	        android:paddingLeft="10dp"
+	        android:gravity="center"
+	        android:textColor="#919191"
+	        android:text="飞行时间"/>  
+	    <TextView 
+	        android:id="@+id/land_time_txt"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="22dp"
+	        android:layout_marginRight="20sp"
+	        android:gravity="right"
+	        android:text="到达时间"/>    
+	 </LinearLayout>  
+	 <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="30dp"/>  
+	    
+	 <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    
+        <TextView 
+	        android:id="@+id/depart_airport_txt"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="24dp"
+	        android:paddingLeft="20dp"
+	        android:text="起飞机场"/>
+        <TextView 
+	        android:id="@+id/land_airport_txt"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="24dp"
+	        android:gravity="right"
+	        android:paddingRight="20dp"
+	        android:text="降落机场"/>  
+	 </LinearLayout> 
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="15dp"/> 
+	
+	<!-- 头等舱购票 -->
+	<LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingRight="20dp"
+    	android:paddingLeft="20dp">
+	    
+        <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="22dp"        
+	        android:text="头等舱"/>
+        <TextView 
+	        android:id="@+id/toudeng_yupiao"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="22dp"
+	        android:gravity="center"
+	        android:textColor="#00ff00"
+	        android:paddingRight="3dp"
+	        android:text="余票"/> 
+	    <TextView 
+	        android:id="@+id/toudeng_piaojia"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="24dp"
+	        android:text="票价"/>
+	    <Button 
+	        android:id="@+id/buy_tou"
+	        android:layout_width="0dp"
+	        android:layout_height="36dp"
+	        android:layout_weight="1"	 
+	        android:textSize="24dp"       
+	        android:text="购票"
+	        android:textColor="#ffffff"
+	        android:background="@android:color/holo_orange_light"/>     
+	 </LinearLayout> 
+	 <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="14dp"
+	    android:textColor="#CD0000"
+	    android:paddingTop="5dp"
+	    android:textSize="15dp"
+	    android:text="最尊贵的享受"/>
+	 <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp"/>
+	<!-- 最优质的服务，最尊贵的享受 -->
+	 
+	<!-- 经济舱购票 -->
+	<LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingRight="20dp"
+    	android:paddingLeft="20dp">
+	    
+        <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="22dp"
+	        android:text="经济舱"/>
+        <TextView 
+	        android:id="@+id/jingji_yupiao"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="22dp"
+	        android:gravity="center"
+	        android:textColor="#00ff00"
+	        android:paddingRight="3dp"
+	        android:text="余票"/> 
+	    <TextView 
+	        android:id="@+id/jingji_piaojia"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="26dp"
+	        android:text="票价"/>
+	    <Button 
+	        android:id="@+id/buy_jing"
+	        android:layout_width="0dp"
+	        android:layout_height="36dp"
+	        android:layout_weight="1"
+	        android:textSize="24dp"	        
+	        android:text="购票"
+	        android:textColor="#ffffff"
+	        android:background="@android:color/holo_orange_light"/>     
+	 </LinearLayout>
+	 <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="5dp"
+	    android:paddingLeft="14dp"
+	    android:textColor="#CDAD00"
+	    android:textSize="15dp"
+	    android:text="最优惠的价格"/>
+	 <!-- 最优惠的价格，最省心的出行 -->
+	 <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="10dp"/>
+	 
+	<TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_gravity="center"
+        android:background="@drawable/ticket11" />
+        
+	</LinearLayout>
+	</ScrollView>
+ 	
+	<Button 
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:textSize="20dp"
+        android:text="重新查询"
+        android:textColor="#ffffff"
+        android:background="@android:color/darker_gray"/>
+	
+
+
+</LinearLayout>

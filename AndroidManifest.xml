@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fly"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".EnterActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name=".FlightActivity"
+            android:label="@string/title_activity_flight" >
+        </activity>
+        <activity
+            android:name=".Specific_Activity"
+            android:label="@string/title_activity_specific_" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".MyAccountActivity"
+            android:label="@string/title_activity_my_account" >
+        </activity>
+        <activity
+            android:name=".BuyTicketTouActivity"
+            android:label="@string/title_activity_buy_ticket_tou" >
+        </activity>
+        <activity
+            android:name=".PaymentActivity"
+            android:label="@string/title_activity_payment" >
+        </activity>
+        <activity
+            android:name=".ChangeIpActivity"
+            android:label="@string/title_activity_change_ip" >
+        </activity>
+        <activity
+            android:name=".MyOrderActivity"
+            android:label="@string/title_activity_my_order" >
+        </activity>
+        <activity
+            android:name=".Order_Specific_Activity"
+            android:label="@string/title_activity_order__specific_" >
+        </activity>
+        <activity
+            android:name=".M_Search_Activity"
+            android:label="@string/title_activity_m__search_" >
+        </activity>
+        <activity
+            android:name=".AddActivity"
+            android:label="@string/title_activity_add" >
+        </activity>
+        <activity
+            android:name=".RefundActivity"
+            android:label="@string/title_activity_refund" >
+        </activity>
+        <activity
+            android:name=".Refund_Specific_Activity"
+            android:label="@string/title_activity_refund__specific_" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fly</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_flight">FlightActivity</string>
+    <string name="title_activity_specific_">Specific_Activity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_my_account">MyAccountActivity</string>
+    <string name="title_activity_buy_ticket_tou">BuyTicketTouActivity</string>
+    <string name="title_activity_payment">PaymentActivity</string>
+    <string name="title_activity_change_ip">ChangeIpActivity</string>
+    <string name="title_activity_my_order">MyOrderActivity</string>
+    <string name="title_activity_order__specific_">Order_Specific_Activity</string>
+    <string name="title_activity_m__search_">M_Search_Activity</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="title_activity_refund">RefundActivity</string>
+    <string name="title_activity_refund__specific_">Refund_Specific_Activity</string>
+
+</resources>

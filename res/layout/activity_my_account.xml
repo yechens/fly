@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="32dp"
+        android:gravity="center"
+        android:text="我的账户" 
+        android:background="@android:color/holo_blue_dark"/>   
+    <TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="10dp" />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+	    android:layout_height="0sp"
+	    android:layout_weight="1" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+ 	   android:layout_height="match_parent"
+ 	   android:orientation="vertical">
+    
+	<TextView 
+	    android:id="@+id/account_txt"
+	    android:textSize="27dp"
+	    android:paddingLeft="10dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="敬语+用户名"/>
+    <TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="10dp" />
+    
+	<TextView 
+	    android:id="@+id/money_txt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="27dp"
+	    android:paddingLeft="10dp"
+	    android:textColor="#ff0000"
+	    android:text="余额"/>
+	<TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="25dp" />
+	
+	<TextView 
+	    android:textSize="24dp"
+	    android:paddingLeft="10dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="通过以下方式增加您的余额："/>
+    <TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="10dp" />
+    
+    <!-- 余额充值方式 -->
+    <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:paddingLeft="10dp"
+         android:paddingRight="10dp"
+         android:orientation="horizontal">
+	     <TextView	        
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:textColor="#00B2EE"
+	        android:textSize="22dp"
+	        android:gravity="left"
+	        android:text="1)绑定银行卡充值" />
+	     <Button 
+	        android:id="@+id/IDCard"
+	        android:layout_width="0dp"
+	        android:layout_gravity="center"
+	        android:layout_weight="1"
+	        android:textSize="22dp"
+	        android:layout_height="40dp"
+	        android:textColor="#ffffff"
+	        android:background="@android:color/holo_orange_light"
+	        android:text="现在充值"/>
+	 </LinearLayout>
+	 <TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp" />
+	 
+	 <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:paddingLeft="10dp"
+         android:paddingRight="10dp"
+         android:orientation="horizontal">
+	     <TextView	        
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:textColor="#00B2EE"
+	        android:textSize="22dp"
+	        android:gravity="left"
+	        android:text="2)每日签到" />
+	     <Button 
+	        android:id="@+id/PlayGame"
+	        android:layout_width="0dp"
+	        android:layout_gravity="center"
+	        android:layout_weight="1"
+	        android:textSize="22dp"
+	        android:layout_height="40dp"
+	        android:textColor="#ffffff"
+	        android:background="@android:color/holo_orange_light"
+	        android:text="现在签到"/>
+	 </LinearLayout>
+	 <TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp" />
+	 
+	 <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:paddingLeft="10dp"
+         android:paddingRight="10dp"
+         android:orientation="horizontal">
+	     <TextView	        
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:textColor="#00B2EE"
+	        android:textSize="22dp"
+	        android:gravity="left"
+	        android:text="3)积分抵现" />
+	     <Button 
+	        android:id="@+id/daiding"
+	        android:layout_width="0dp"
+	        android:layout_gravity="center"
+	        android:layout_weight="1"
+	        android:textSize="22dp"
+	        android:layout_height="40dp"
+	        android:textColor="#ffffff"
+	        android:background="@android:color/holo_orange_light"
+	        android:text="现在兑换"/>
+	 </LinearLayout>
+	 <TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp" />
+	
+	 <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:background="@drawable/bank"/>
+	  
+	<ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+ 	</ListView>
+ 	
+	</LinearLayout>
+	</ScrollView>
+	
+ 	<LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+ 	<Button 
+        android:id="@+id/backbtn"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:textSize="26dp"
+        android:layout_height="36dp"
+        android:textColor="#ffffff"
+        android:background="@android:color/holo_orange_light"
+        android:text="好的 我知道了"/>
+ 	</LinearLayout>
+ 	
+</LinearLayout>

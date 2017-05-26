@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="修改IPv4地址" 
+        android:background="@android:color/holo_blue_dark"/>  
+     <TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp" /> 
+        
+     <TextView	        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00B2EE"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:text="请输入新的IPv4地址" />
+     <TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp" /> 
+	    
+     <EditText 
+         android:id="@+id/change_id"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textSize="26sp" />
+     <TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp" /> 
+	    
+      <Button 
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:textSize="26dp"
+        android:layout_height="45dp"
+        android:textColor="#ffffff"
+        android:background="@android:color/darker_gray"
+        android:text="确定修改"/>    
+     
+</LinearLayout>        
